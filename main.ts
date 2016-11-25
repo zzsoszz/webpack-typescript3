@@ -11,7 +11,7 @@ $(document).ready(function(){
     $("#btn").click(function(){
             require.ensure(['./greet'], function(require) {
                 //{Greet:{new():Greet}}  {Greet:new()=>Greet}
-                var greet =<{Greet}>require('./greet');
+                var greet =<{Greet:{new():Greet}}>require('./greet');
                 var  bbb=new greet.Greet();
                 bbb.sayHi();
             });
