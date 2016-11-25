@@ -10,7 +10,7 @@ function User(){
 $(document).ready(function(){
     $("#btn").click(function(){
             require.ensure(['./greet'], function(require) {
-                var greet =<any>require('./greet');
+                var greet =<{Greet:new()=>Greet}>require('./greet');
                 var  bbb=new greet.Greet();
                 bbb.sayHi();
             });
