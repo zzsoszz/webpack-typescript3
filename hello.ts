@@ -1,9 +1,10 @@
-export class Hello{
+import {Say} from "./say"
+export class Hello extends Say{
     constructor() {
-        
+        super();
     }
     name:string;
-    sayHello(){
-        console.log("bbbbbbbbbb");
+    say(){
+        console.log("hello:"+this.name);
     }
 }
