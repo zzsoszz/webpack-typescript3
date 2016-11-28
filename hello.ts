@@ -5,6 +5,6 @@ export class Hello extends Say{
     }
     name:string;
     say(){
-        console.log("hello:"+this.name);
+        console.log("hello");
     }
 }
