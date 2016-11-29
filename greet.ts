@@ -4,7 +4,4 @@ export   class Greet extends Say{
         super();
     }
     name:string;
-    say(){
-        console.log("greet");
-    }
 }

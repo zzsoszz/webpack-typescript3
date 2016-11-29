@@ -1,3 +1,5 @@
 export abstract class Say{
-   abstract say();
+    say(){
+        console.log("say");
+    };
 }
